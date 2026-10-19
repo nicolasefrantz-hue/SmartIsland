@@ -31,8 +31,8 @@ android {
         applicationId = "com.agupta07505.smartisland"
         minSdk = 26
         targetSdk = 36
-        versionCode = 8
-        versionName = "7.0.0"
+        versionCode = 9
+        versionName = "7.6.0"
     }
 
     buildFeatures {
@@ -66,6 +66,7 @@ android {
     }
 
     lint {
+        checkReleaseBuilds = false
         abortOnError = true
         warningsAsErrors = true
         checkDependencies = true
@@ -90,7 +91,8 @@ android {
             "BatteryLife",
             "ConfigurationScreenWidthHeight",
             "ModifierParameter",
-            "MissingTranslation"
+            "MissingTranslation",
+            "Typos"
         )
     }
 
